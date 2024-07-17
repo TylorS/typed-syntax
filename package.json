@@ -1,0 +1,26 @@
+{
+  "name": "typed-syntax",
+  "displayName": "@typed/syntax",
+  "description": "Syntax highlighting for Typed Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "publisher": "tylors",
+  "contributes": {
+    "languages": [{
+      "id": "typed",
+      "aliases": ["Typed"],
+      "extensions": [".typed"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "typed",
+      "scopeName": "source.typed",
+      "path": "./syntaxes/typed.tmLanguage.json"
+    }]
+  }
+}
