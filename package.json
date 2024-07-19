@@ -2,7 +2,7 @@
   "name": "typed-syntax",
   "displayName": "@typed/syntax",
   "description": "Syntax highlighting for Typed Language",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.91.0"
   },
