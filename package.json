@@ -11,16 +11,35 @@
   ],
   "publisher": "tylors",
   "contributes": {
-    "languages": [{
-      "id": "typed",
-      "aliases": ["Typed"],
-      "extensions": [".typed"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "typed",
-      "scopeName": "source.typed",
-      "path": "./syntaxes/typed.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "typed",
+        "aliases": [
+          "Typed"
+        ],
+        "extensions": [
+          ".typed"
+        ],
+        "configuration": "./language-configuration.json",
+        "embeddedLanguages": {
+          "source.ts": "typescript",
+          "source.tsx": "typescriptreact"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "typed",
+        "scopeName": "source.typed",
+        "path": "./syntaxes/typed.tmLanguage.json"
+      },
+      {
+        "scopeName": "source.ts.typed",
+        "path": "./syntaxes/typescript.tmLanguage.json",
+        "injectTo": [
+          "source.ts"
+        ]
+      }
+    ]
   }
 }
