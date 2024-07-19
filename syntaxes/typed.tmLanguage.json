@@ -4,12 +4,12 @@
   "scopeName": "source.typed",
   "fileTypes": ["typed"],
   "injections": {
-    "L:(meta.script.astro) (meta.lang.ts | meta.lang.typescript) - (meta source)": {
+    "L:(meta.script.typed) (meta.lang.ts | meta.lang.typescript) - (meta source)": {
       "patterns": [
         {
           "begin": "(?<=>)(?!</)",
           "end": "(?=</)",
-          "name": "meta.embedded.block.astro",
+          "name": "meta.embedded.block.typed",
           "contentName": "source.ts",
           "patterns": [
             {
